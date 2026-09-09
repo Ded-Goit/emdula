@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { ArrowRight } from "lucide-react";
 import { useSyncExternalStore } from "react";
+import Button from "@/components/ui/Button/Button";
 
 import styles from "./Hero.module.css";
 
@@ -71,14 +72,17 @@ export default function Hero() {
           <p className={styles.description}>{t("hero.description")}</p>
 
           <div className={styles.actions}>
-            <a href="#products" className={styles.primaryButton}>
-              <span>{t("hero.exploreProducts")}</span>
-              <ArrowRight aria-hidden="true" />
-            </a>
+            <Button
+              href="#products"
+              variant="primary"
+              icon={<ArrowRight aria-hidden="true" />}
+            >
+              {t("hero.exploreProducts")}
+            </Button>
 
-            <a href="#contact" className={styles.secondaryButton}>
+            <Button href="#contact" variant="secondary">
               {t("hero.contactUs")}
-            </a>
+            </Button>
           </div>
         </div>
 
