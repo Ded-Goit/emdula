@@ -1,7 +1,6 @@
 "use client";
 
 import i18n from "i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en/common.json";
@@ -17,29 +16,27 @@ const resources = {
 };
 
 if (!i18n.isInitialized) {
-  i18n
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-      resources,
+  i18n.use(initReactI18next).init({
+    resources,
 
-      fallbackLng: "en",
+    // IMPORTANT:
+    // The initial language must be identical on server and client.
+    lng: "en",
+    fallbackLng: "en",
 
-      supportedLngs: ["en", "uk"],
+    supportedLngs: ["en", "uk"],
 
-      defaultNS: "common",
+    defaultNS: "common",
+    ns: ["common"],
 
-      ns: ["common"],
+    interpolation: {
+      escapeValue: false,
+    },
 
-      interpolation: {
-        escapeValue: false,
-      },
-
-      detection: {
-        order: ["localStorage", "navigator"],
-        caches: ["localStorage"],
-      },
-    });
+    react: {
+      useSuspense: false,
+    },
+  });
 }
 
 export default i18n;
