@@ -1,0 +1,305 @@
+.header {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #eeeeee;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 64px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #111111;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.logoMark {
+  width: 29px;
+  height: 29px;
+  flex-shrink: 0;
+}
+
+.desktopNav,
+.desktopActions {
+  display: none;
+}
+
+.menuButton {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #111111;
+}
+
+.menuButton svg {
+  width: 22px;
+  height: 22px;
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  padding: 0 20px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    visibility 180ms ease;
+}
+
+.mobileMenuOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+}
+
+.mobileNav a {
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #eeeeee;
+
+  color: #171717;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mobileNav a:last-child {
+  border-bottom: 0;
+}
+
+.mobileNav svg {
+  width: 16px;
+  height: 16px;
+}
+
+.mobileLanguages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 0 20px;
+
+  color: #777777;
+  font-size: 13px;
+}
+
+.mobileLanguages > div {
+  display: flex;
+  gap: 6px;
+}
+
+.mobileLanguages button {
+  padding: 7px 10px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #666666;
+
+  font-size: 12px;
+}
+
+.mobileLanguages .activeLanguage {
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
+}
+
+.languageSwitcher {
+  position: relative;
+}
+
+.languageButton {
+  min-width: 112px;
+  height: 38px;
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 7px;
+
+  background: #f7f7f7;
+  color: #333333;
+
+  font-size: 11px;
+}
+
+.languageButton svg {
+  width: 13px;
+  height: 13px;
+}
+
+.languageDropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+
+  width: 140px;
+  padding: 5px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 9px;
+
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease,
+    visibility 150ms ease;
+}
+
+.languageSwitcher:hover .languageDropdown,
+.languageSwitcher:focus-within .languageDropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.languageDropdown button {
+  width: 100%;
+  padding: 9px 10px;
+
+  border: 0;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #444444;
+
+  text-align: left;
+  font-size: 12px;
+}
+
+.languageDropdown button:hover,
+.languageDropdown .activeLanguage {
+  background: #f4f4f4;
+  color: #111111;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-height: 72px;
+    padding: 0 32px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .logoMark {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    min-height: 72px;
+    padding: 0 40px;
+  }
+
+  .desktopNav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    margin-left: auto;
+    margin-right: 42px;
+  }
+
+  .desktopNav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #444444;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    transition: color 150ms ease;
+  }
+
+  .desktopNav a:hover {
+    color: #111111;
+  }
+
+  .desktopNav svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .desktopActions {
+    display: block;
+  }
+
+  .menuButton,
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    min-height: 80px;
+    padding: 0 76px;
+  }
+
+  .desktopNav {
+    gap: 34px;
+    margin-right: 40px;
+  }
+}

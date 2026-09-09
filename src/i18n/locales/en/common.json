@@ -1,0 +1,167 @@
+{
+  "common": {
+    "language": "English",
+    "ukrainian": "Ukrainian",
+    "english": "English"
+  },
+
+  "navigation": {
+    "products": "Products",
+    "solutions": "Solutions",
+    "aboutUs": "About Us",
+    "howWeWork": "How We Work"
+  },
+
+  "hero": {
+    "titleLine1": "We're building",
+    "titleLine2": "future with",
+    "titleLine3": "everyone",
+    "titleLine4": "who wants to see it",
+    "description": "Connect operational data, understand business context, and automate complex workflows with our enterprise AI platform.",
+    "exploreProducts": "Explore Products",
+    "contactUs": "Contact us"
+  },
+
+  "trusted": {
+    "label": "TRUSTED BY INNOVATIVE TEAMS WORLDWIDE"
+  },
+
+  "products": {
+    "title": "Turning complexity into connected systems",
+    "description": "Powerful applications designed to solve specific operational challenges across your organization.",
+
+    "realEstate": {
+      "label": "Real Estate Intelligence",
+      "title": "RealECon",
+      "description": "Optimize portfolio performance, automate document extraction, and accelerate transaction timelines with AI built specifically for real estate.",
+      "button": "Explore RealECon"
+    },
+
+    "enterprise": {
+      "label": "Enterprise Core",
+      "title": "Company Name",
+      "description": "The foundational operating system for unstructured data. Build custom workflows, train specialized models, and scale intelligence.",
+      "button": "Explore Platform"
+    }
+  },
+
+  "stats": {
+    "users": {
+      "value": "10k+",
+      "label": "ENTERPRISE USERS"
+    },
+    "assets": {
+      "value": "$2B+",
+      "label": "ASSETS MANAGED"
+    },
+    "support": {
+      "value": "24/7",
+      "label": "GLOBAL SUPPORT"
+    },
+    "availability": {
+      "value": "99.9%",
+      "label": "PLATFORM AVAILABILITY"
+    }
+  },
+
+  "operatingLayer": {
+    "title": "AI is the operating layer",
+    "description": "Emdula designs systems where AI works inside real business workflows: organizing data, reducing repetitive work, surfacing context, and helping teams move from scattered information to structured action.",
+
+    "workflow": {
+      "title": "Real workflows first",
+      "description": "We start with how teams actually communicate, decide, coordinate, and move work forward."
+    },
+
+    "truth": {
+      "title": "One source of truth",
+      "description": "Data stays connected across people, processes, and operations."
+    },
+
+    "automation": {
+      "title": "Purposeful automation",
+      "description": "Automation is used where it reduces repetitive work and operational friction."
+    },
+
+    "growth": {
+      "title": "Built for long-term growth",
+      "description": "Systems are designed as infrastructure that can evolve with the business."
+    }
+  },
+
+  "environment": {
+    "title": "Built for complex operational environments",
+    "description": "We build for industries where efficiency, clarity, and trust matter — starting with real estate.",
+
+    "finance": "Finance",
+    "workflow": "Workflow Automation",
+    "operations": "Operations",
+    "future": "Future Solutions",
+    "data": "Data & Communication",
+    "ai": "AI Systems"
+  },
+
+  "realEstate": {
+    "title": "Built for real business needs, not demos",
+    "description": "Technology should solve real operational problems. Our systems are designed around the people, processes, and decisions that keep businesses moving.",
+    "button": "Explore RealECon"
+  },
+
+  "leadership": {
+    "title": "Leadership Team",
+    "description": "The people shaping our vision and building the future of intelligent business systems."
+  },
+
+  "team": {
+    "title": "Core Team",
+    "description": "The people building, improving, and supporting Emdula every day."
+  },
+
+  "talent": {
+    "title": "+10 More Talented Professionals From Ukraine",
+    "description": "A growing team of talented professionals bringing expertise, creativity, and dedication to every project."
+  },
+
+  "whyEmdula": {
+    "title": "Why Emdula",
+    "description": "We don't just build software. We build systems that help businesses operate with more clarity, intelligence, and confidence.",
+
+    "items": {
+      "built": {
+        "title": "Built for real work",
+        "description": "Designed around actual business processes and operational needs."
+      },
+      "intelligence": {
+        "title": "Enterprise-grade intelligence",
+        "description": "AI systems designed to work with complex business data."
+      },
+      "flexible": {
+        "title": "Flexible and scalable",
+        "description": "Infrastructure that grows with your organization."
+      },
+      "partners": {
+        "title": "Partners, not vendors",
+        "description": "We work alongside teams to create lasting solutions."
+      }
+    }
+  },
+
+  "industries": {
+    "title": "There are two types of businesses: those that are AI — and those that are out of business",
+    "description": "The future belongs to organizations that turn complexity into intelligent action."
+  },
+
+  "cta": {
+    "title": "Ready to build smarter systems?",
+    "button": "Explore products",
+    "contact": "Contact us"
+  },
+
+  "footer": {
+    "company": "Company",
+    "products": "Products",
+    "resources": "Resources",
+    "language": "Language",
+    "copyright": "© {{year}} Emdula. All rights reserved."
+  }
+}
